@@ -8,6 +8,7 @@
 </tr>
 <tr>
 <td>
+<a href="#22.8.0">22.8.0</a><br/>
 <a href="#22.7.0">22.7.0</a><br/>
 <a href="#22.6.0">22.6.0</a><br/>
 <a href="#22.5.1">22.5.1</a><br/>
@@ -45,6 +46,54 @@
   * [0.10.x](CHANGELOG_V010.md)
   * [io.js](CHANGELOG_IOJS.md)
   * [Archive](CHANGELOG_ARCHIVE.md)
+
+<a id="22.8.0"></a>
+
+## 2024-08-26, Version 22.8.0 (Current), @RafaelGSS
+
+### Notable Changes
+
+* \[[`94eb81a739`](https://github.com/nodejs/node/commit/94eb81a739)] - **(SEMVER-MINOR)** **net**: exclude ipv6 loopback addresses from server.listen (Giovanni Bucci) [#54264](https://github.com/nodejs/node/pull/54264)
+* \[[`421f563914`](https://github.com/nodejs/node/commit/421f563914)] - **(SEMVER-MINOR)** **test\_runner**: add support for coverage thresholds (Aviv Keller) [#54429](https://github.com/nodejs/node/pull/54429)
+* \[[`33fca53329`](https://github.com/nodejs/node/commit/33fca53329)] - **(SEMVER-MINOR)** **test\_runner**: support running tests in process (Colin Ihrig) [#53927](https://github.com/nodejs/node/pull/53927)
+* \[[`858b583c88`](https://github.com/nodejs/node/commit/858b583c88)] - **(SEMVER-MINOR)** **test\_runner**: defer inheriting hooks until run() (Colin Ihrig) [#53927](https://github.com/nodejs/node/pull/53927)
+
+### Commits
+
+* \[[`a3f4e562f5`](https://github.com/nodejs/node/commit/a3f4e562f5)] - **build**: don't clean obj.target directory if it doesn't exist (Joyee Cheung) [#54337](https://github.com/nodejs/node/pull/54337)
+* \[[`89af95cbb2`](https://github.com/nodejs/node/commit/89af95cbb2)] - **build**: update required python version to 3.8 (Aviv Keller) [#54358](https://github.com/nodejs/node/pull/54358)
+* \[[`3561e38671`](https://github.com/nodejs/node/commit/3561e38671)] - **deps**: update amaro to 0.1.7 (Node.js GitHub Bot) [#54473](https://github.com/nodejs/node/pull/54473)
+* \[[`1efc251ded`](https://github.com/nodejs/node/commit/1efc251ded)] - **deps**: update undici to 6.19.8 (Node.js GitHub Bot) [#54456](https://github.com/nodejs/node/pull/54456)
+* \[[`a1ff098db9`](https://github.com/nodejs/node/commit/a1ff098db9)] - **deps**: sqlite: fix Windows compilation (Colin Ihrig) [#54433](https://github.com/nodejs/node/pull/54433)
+* \[[`dd034eaeea`](https://github.com/nodejs/node/commit/dd034eaeea)] - **deps**: update sqlite to 3.46.1 (Node.js GitHub Bot) [#54433](https://github.com/nodejs/node/pull/54433)
+* \[[`fe4a92a66c`](https://github.com/nodejs/node/commit/fe4a92a66c)] - **doc**: update websocket flag description to reflect stable API status (Yelim Koo) [#54482](https://github.com/nodejs/node/pull/54482)
+* \[[`0f2b7ec0d4`](https://github.com/nodejs/node/commit/0f2b7ec0d4)] - **doc**: fix capitalization in module.md (shallow-beach) [#54488](https://github.com/nodejs/node/pull/54488)
+* \[[`25419915c7`](https://github.com/nodejs/node/commit/25419915c7)] - **doc**: add esm examples to node:https (Alfredo González) [#54399](https://github.com/nodejs/node/pull/54399)
+* \[[`83b5efeb54`](https://github.com/nodejs/node/commit/83b5efeb54)] - **doc**: reserve ABI 130 for Electron 33 (Calvin) [#54383](https://github.com/nodejs/node/pull/54383)
+* \[[`6ccbd32ae8`](https://github.com/nodejs/node/commit/6ccbd32ae8)] - **doc, meta**: add missing `,` to `BUILDING.md` (Aviv Keller) [#54409](https://github.com/nodejs/node/pull/54409)
+* \[[`f7b7429deb`](https://github.com/nodejs/node/commit/f7b7429deb)] - **fs**: refactor handleTimestampsAndMode to remove redundant call (HEESEUNG) [#54369](https://github.com/nodejs/node/pull/54369)
+* \[[`221bfa6b21`](https://github.com/nodejs/node/commit/221bfa6b21)] - **meta**: remind users to use a supported version in bug reports (Aviv Keller) [#54481](https://github.com/nodejs/node/pull/54481)
+* \[[`f2a8d17124`](https://github.com/nodejs/node/commit/f2a8d17124)] - **meta**: add more labels to dep-updaters (Aviv Keller) [#54454](https://github.com/nodejs/node/pull/54454)
+* \[[`c4996c189f`](https://github.com/nodejs/node/commit/c4996c189f)] - **meta**: run coverage-windows when `vcbuild.bat` updated (Aviv Keller) [#54412](https://github.com/nodejs/node/pull/54412)
+* \[[`336496b90e`](https://github.com/nodejs/node/commit/336496b90e)] - **module**: add sourceURL magic comment hinting generated source (Chengzhong Wu) [#54402](https://github.com/nodejs/node/pull/54402)
+* \[[`94eb81a739`](https://github.com/nodejs/node/commit/94eb81a739)] - **(SEMVER-MINOR)** **net**: exclude ipv6 loopback addresses from server.listen (Giovanni Bucci) [#54264](https://github.com/nodejs/node/pull/54264)
+* \[[`88d789aca4`](https://github.com/nodejs/node/commit/88d789aca4)] - **src**: use correct way to signal interceptor error (Michaël Zasso) [#54418](https://github.com/nodejs/node/pull/54418)
+* \[[`2285902d55`](https://github.com/nodejs/node/commit/2285902d55)] - **src**: remove cached data tag from snapshot metadata (Joyee Cheung) [#54122](https://github.com/nodejs/node/pull/54122)
+* \[[`3a74c400d5`](https://github.com/nodejs/node/commit/3a74c400d5)] - **src**: improve `buffer.transcode` performance (Yagiz Nizipli) [#54153](https://github.com/nodejs/node/pull/54153)
+* \[[`909c5320fd`](https://github.com/nodejs/node/commit/909c5320fd)] - **src**: move more crypto code to ncrypto (James M Snell) [#54320](https://github.com/nodejs/node/pull/54320)
+* \[[`9bf1e85c12`](https://github.com/nodejs/node/commit/9bf1e85c12)] - **stream**: change stream to use index instead of `for...of` (Wiyeong Seo) [#54474](https://github.com/nodejs/node/pull/54474)
+* \[[`b1075c2991`](https://github.com/nodejs/node/commit/b1075c2991)] - **test**: fix improper path to URL conversion (Antoine du Hamel) [#54509](https://github.com/nodejs/node/pull/54509)
+* \[[`a0f44a85bf`](https://github.com/nodejs/node/commit/a0f44a85bf)] - **test**: add tests for runner coverage with different stdout column widths (Pietro Marchini) [#54494](https://github.com/nodejs/node/pull/54494)
+* \[[`6a669cd5ec`](https://github.com/nodejs/node/commit/6a669cd5ec)] - **test**: prevent V8 from writing into the system's tmpdir (Michaël Zasso) [#54395](https://github.com/nodejs/node/pull/54395)
+* \[[`421f563914`](https://github.com/nodejs/node/commit/421f563914)] - **(SEMVER-MINOR)** **test\_runner**: add support for coverage thresholds (Aviv Keller) [#54429](https://github.com/nodejs/node/pull/54429)
+* \[[`eb0fe1993f`](https://github.com/nodejs/node/commit/eb0fe1993f)] - **test\_runner**: refactor `mock_loader` (Antoine du Hamel) [#54223](https://github.com/nodejs/node/pull/54223)
+* \[[`33fca53329`](https://github.com/nodejs/node/commit/33fca53329)] - **(SEMVER-MINOR)** **test\_runner**: support running tests in process (Colin Ihrig) [#53927](https://github.com/nodejs/node/pull/53927)
+* \[[`858b583c88`](https://github.com/nodejs/node/commit/858b583c88)] - **(SEMVER-MINOR)** **test\_runner**: defer inheriting hooks until run() (Colin Ihrig) [#53927](https://github.com/nodejs/node/pull/53927)
+* \[[`45b0250692`](https://github.com/nodejs/node/commit/45b0250692)] - **test\_runner**: account for newline in source maps (Colin Ihrig) [#54444](https://github.com/nodejs/node/pull/54444)
+* \[[`1c29e74d30`](https://github.com/nodejs/node/commit/1c29e74d30)] - **test\_runner**: make `mock.module`'s `specifier` consistent with `import()` (Antoine du Hamel) [#54416](https://github.com/nodejs/node/pull/54416)
+* \[[`cbe30a02a3`](https://github.com/nodejs/node/commit/cbe30a02a3)] - **test\_runner**: finish build phase before running tests (Colin Ihrig) [#54423](https://github.com/nodejs/node/pull/54423)
+* \[[`23d05b2207`](https://github.com/nodejs/node/commit/23d05b2207)] - **tools**: add swc license (Marco Ippolito) [#54462](https://github.com/nodejs/node/pull/54462)
+* \[[`06a0c915f4`](https://github.com/nodejs/node/commit/06a0c915f4)] - **typings**: provide internal types for wasi bindings (Andrew Moon) [#54119](https://github.com/nodejs/node/pull/54119)
 
 <a id="22.7.0"></a>
 
